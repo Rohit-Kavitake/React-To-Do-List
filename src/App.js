@@ -1,5 +1,3 @@
-// import { Button } from "reactstrap";
-import "./App.css";
 import Header from "./components/Header";
 import AddData from "./components/AddData";
 import Todos from "./components/Todos";
