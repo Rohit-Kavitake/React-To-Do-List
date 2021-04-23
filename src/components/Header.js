@@ -1,7 +1,6 @@
 import React from "react";
 import "./header.scss";
 
-
 const Header = (props) => {
 	return (
 		<nav className="navbar navbar-expand-md bg-primary navbar-dark">
@@ -24,7 +23,7 @@ const Header = (props) => {
 			<div className="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul className="navbar-nav">
 					<li className="nav-item">
-						<a className="nav-link " href="mailto:kavitakerohit2001@gmail.com">
+						<a className="nav-link justify-content-start " href="mailto:kavitakerohit2001@gmail.com">
 							Rohit Kavitake
 						</a>
 					</li>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Serachbar.scss";
+import "./AddData.scss";
 
-const SearchBar = ({ data, setTaskData }) => {
+const AddData = ({ data, setTaskData }) => {
 	const [Search, setSearch] = useState("");
 	const [Desc, setDesc] = useState("");
 
@@ -20,35 +20,9 @@ const SearchBar = ({ data, setTaskData }) => {
 	};
 	return (
 		<div className="container">
-			<form onSubmit={AddTask}>
+			<form id="dataform" onSubmit={AddTask}>
 				<div className="input-group mb-3">
-					{/* <div  className="input-field">
-						<input
-							type="text"
-							id="task"
-							// className="form-control"
-							// placeholder="I Want to ..."
-							value={Search}
-							onChange={(e) => setSearch(e.target.value)}
-							required
-						/>
-						<label htmlFor="task">I Want To...</label>
-					</div>
 					<div className="input-field">
-						<input
-							type="text"
-							id="desc"
-							// className="form-control"
-							// placeholder="Description"
-							value={Desc}
-							onChange={(e) => setDesc(e.target.value)}
-							required
-						/>
-						<label id="forDesc" htmlFor="desc">
-							Description
-						</label>
-					</div> */}
-					<div class="input-field">
 						<input
 							type="text"
 							id="name"
@@ -56,9 +30,9 @@ const SearchBar = ({ data, setTaskData }) => {
 							onChange={(e) => setSearch(e.target.value)}
 							required
 						/>
-						<label for="name">I Want To...</label>
+						<label htmlFor="name">I Want To...</label>
 					</div>
-					<div class="input-field">
+					<div className="input-field">
 						<input
 							type="text"
 							id="name11"
@@ -66,7 +40,7 @@ const SearchBar = ({ data, setTaskData }) => {
 							onChange={(e) => setDesc(e.target.value)}
 							required
 						/>
-						<label for="name11">Description</label>
+						<label htmlFor="name11">Description</label>
 					</div>
 					<div>
 						<button className="btn  btn-success" type="submit">
@@ -79,4 +53,4 @@ const SearchBar = ({ data, setTaskData }) => {
 	);
 };
 
-export default SearchBar;
+export default AddData;

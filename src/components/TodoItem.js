@@ -1,9 +1,9 @@
 import React from "react";
 
-function TodoItem({ task, deleteTask }) {
+function TodoItem({ task, deleteTask, updateTask, setTaskData }) {
 	// console.log(task.sno)
 	return (
-		<div key={task.sno}>
+		<div >
 			<div className="row m-4">
 				<div className="col-md-8 col-sm-8 col-xs-8 text-center">
 					<h2 style={{ wordWrap: "break-word" }}>{task.title}</h2>
@@ -20,8 +20,14 @@ function TodoItem({ task, deleteTask }) {
 					>
 						Delete
 					</button>
-					{/* <br /> */}
-					<button className="btn m-1 btn-primary">update</button>
+					<button
+						className="btn m-1 btn-primary"
+						onClick={() => {
+							updateTask(task);
+						}}
+					>
+						update
+					</button>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,27 @@
+<form onSubmit={saveUpdated}>
+									<div className="input-field">
+										<input
+											type="text"
+											id="title"
+											// size="50"
+											value={Title}
+											onChange={(e) => setTitle(e.target.value)}
+											required
+										/>
+										<label htmlFor="name">I Want To...</label>
+									</div>
+									<div className="input-field">
+										<input
+											type="text"
+											id="desc"
+											size="40"
+											value={Desc}
+											onChange={(e) => setDesc(e.target.value)}
+											required
+										/>
+										<label htmlFor="name11">Description</label>
+									</div>
+									<button id="save" type="submit" className="btn btn-primary">
+										Save changes
+									</button>
+								</form>
